@@ -38,7 +38,7 @@
   {
     "name": "SocioPedia - A Social Media App",
     "desc": "This is a full stack web application in which user can make friends and upload pictures. This app is built using ReactJs, MongoDB, NodeJs, ExprssJs and MaterialUI",
-    "image": "",
+    "image": "sociopedia",
     "category": "mern",
     "links": {
       "view": "https://social-pedia.netlify.app/",

@@ -117,9 +117,12 @@ function showProjects(projects) {
     </div>`
     });
     projectHTML += `
-    <div class="box">
-        <h2>New Project</h2>
-        <p>This is a new project description.</p>
+    <div class="box-tilt">
+    <div class="box tilt">
+      <img draggable="false" src="/assets/images/projects/loading.gif" alt="project" />
+        </div>
+        </div>
+      </div>
     </div>
 `;
 
