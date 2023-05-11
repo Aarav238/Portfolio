@@ -675,7 +675,8 @@ header .navbar ul li a:hover {
 .work .box-container .box img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: scale-down;
+
 }
 .work .box-container .box .content {
   height: 100%;

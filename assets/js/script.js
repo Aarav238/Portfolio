@@ -116,7 +116,17 @@ function showProjects(projects) {
       </div>
     </div>`
     });
+    projectHTML += `
+    <div class="box">
+        <h2>New Project</h2>
+        <p>This is a new project description.</p>
+    </div>
+`;
+
+    console.log(projectHTML);
+ 
     projectsContainer.innerHTML = projectHTML;
+
 
     // <!-- tilt js effect starts -->
     VanillaTilt.init(document.querySelectorAll(".tilt"), {
