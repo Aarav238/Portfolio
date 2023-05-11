@@ -213,11 +213,11 @@ srtop.reveal('.home .instagram', { interval: 600 });
 srtop.reveal('.home .dev', { interval: 600 });
 
 /* SCROLL ABOUT */
-srtop.reveal('.about .content h3', { delay: 200 });
-srtop.reveal('.about .content .tag', { delay: 200 });
-srtop.reveal('.about .content p', { delay: 200 });
-srtop.reveal('.about .content .box-container', { delay: 200 });
-srtop.reveal('.about .content .resumebtn', { delay: 200 });
+srtop.reveal('.about .content h3', { delay: 100});
+srtop.reveal('.about .content .tag', { delay: 100  });
+srtop.reveal('.about .content p', { delay: 100  });
+srtop.reveal('.about .content .box-container', { delay: 100  });
+srtop.reveal('.about .content .resumebtn', { delay: 100  });
 
 
 /* SCROLL SKILLS */
@@ -235,5 +235,5 @@ srtop.reveal('.experience .timeline', { delay: 400 });
 srtop.reveal('.experience .timeline .container', { interval: 300 });
 
 /* SCROLL CONTACT */
-srtop.reveal('.contact .container', { delay: 400 });
-srtop.reveal('.contact .container .form-group', { delay: 300 });
+srtop.reveal('.contact .container', { delay:200 });
+srtop.reveal('.contact .container .form-group', { delay: 200 });
