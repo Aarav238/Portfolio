@@ -330,6 +330,11 @@ header .navbar ul li a:hover {
 
 /* hero media queries starts*/
 @media (max-width: 450px) {
+
+ 
+  .home .content h2 {
+    padding: 3rem 0 0 0;
+  }
   .home .btn {
     margin: 4rem 0;
   }
