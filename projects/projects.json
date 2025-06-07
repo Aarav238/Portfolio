@@ -1,38 +1,20 @@
 [
   {
-    "name": "Buzz - The Chat App",
+    "name": "ChatDocs: AI-Powered Document Chat Application",
+    "desc": "AI-powered document chat app with React, Next.js, tRPC backend, LangChain & OpenAI integration, and Stripe-powered subscriptions.",
+    "image": "chatdocs",
+    "links": {
+      "view": "https://chatdocs-phi.vercel.app/",
+      "code": "https://github.com/Aarav238/chatdocs"
+    }
+  },
+  {
+    "name": "Buzz-Chat: Real-Time Web Chat Application",
     "desc": "Chat with any user available in the database. Built using ReactJs, ExpressJs , MongoDB, NodeJs , Socket.io and multiAvatarApi(for avatars)",
     "image": "chat",
     "links": {
       "view": "https://buzz-chat-app.netlify.app/",
       "code": "https://github.com/Aarav238/Buzz-Chat"
-    }
-  },
-  {
-    "name": "ClimeSky - The Weather App",
-    "desc": "Made a live Weather Website. Used Open Weather API to weather data. Build using HTML, CSS , JavaScript. ",
-    "image": "weather",
-    "links": {
-      "view": "https://aarav238.github.io/ClimeSky/",
-      "code": "https://github.com/Aarav238/ClimeSky"
-    }
-  },
-  {
-    "name": "Keeper - Make notes",
-    "desc": "Build a note making app using ReactJS and used bootstrap for styling the website. In this, User can make note and add notes to the main page.",
-    "image": "notes",
-    "links": {
-      "view": "https://keeper-app-orpin.vercel.app/",
-      "code": "https://github.com/Aarav238/Keeper-App"
-    }
-  },
-  {
-    "name": "RestFull App(Docker)",
-    "desc": "Build RESTful Crud APIs Using NodeJs and ExpressJs and containerized them using Docker then deployed it in docker Hub. Technologies used are NodeJs , ExpressJs, Docker , PostMan",
-    "image": "docker",
-    "links": {
-      "view": "https://hub.docker.com/repository/docker/aarav08/docker-node",
-      "code": "https://github.com/Aarav238/Docker-App"
     }
   },
   {
@@ -43,6 +25,34 @@
     "links": {
       "view": "https://social-pedia.netlify.app/",
       "code": "https://github.com/Aarav238/Social-Media-App"
+    }
+  },
+  {
+    "name": "Mail-Bot: The Automated Email Reply System",
+    "desc": "Automated system using Node.js and Google APIs to fetch unread emails and generate smart replies, handling 500+ emails daily with secure OAuth2 authentication.",
+    "image": "mailbot",
+    "links": {
+      "view": "https://mail-bot-demo.netlify.app/",
+      "code": "https://github.com/Aarav238/Mail-Bot"
+    }
+  }
+  ,
+  {
+    "name": "Keeper - Make notes",
+    "desc": "Build a note making app using ReactJS and used bootstrap for styling the website. In this, User can make note and add notes to the main page.",
+    "image": "notes",
+    "links": {
+      "view": "https://keeper-app-orpin.vercel.app/",
+      "code": "https://github.com/Aarav238/Keeper-App"
+    }
+  },
+  {
+    "name": "ClimeSky - The Weather App",
+    "desc": "Made a live Weather Website. Used Open Weather API to weather data. Build using HTML, CSS , JavaScript. ",
+    "image": "weather",
+    "links": {
+      "view": "https://aarav238.github.io/ClimeSky/",
+      "code": "https://github.com/Aarav238/ClimeSky"
     }
   } 
 ]

@@ -522,7 +522,8 @@ header .navbar ul li a:hover {
   font-size: 2rem;
   font-weight: 500;
   font-family: "Poppins";
-  margin-left: 0.5rem;
+  margin-left: 0.4rem;
+  text-align: center;
 }
 /* skills media queries starts*/
 @media screen and (max-width: 600px) {
@@ -704,7 +705,7 @@ header .navbar ul li a:hover {
   background: #ffd900;
 }
 .work .box-container .box .content .tag h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .work .box-container .box:hover .content {
   top: 25%;

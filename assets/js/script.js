@@ -62,7 +62,7 @@ $(document).ready(function () {
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-    strings: ["Web development","Open Source", "DevOps","Communities"],
+    strings: ["Web Development","Open Source", "DevOps","Generative AI"],
     loop: true,
     typeSpeed: 60,
     backSpeed: 30,
