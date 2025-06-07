@@ -1237,3 +1237,68 @@ form .button-area {
   top: calc(100% - 12rem);
 }
 /* scroll top ends */
+
+/* Add to your style.css file */
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 15px 25px;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  transform: translateX(120%);
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+.notification.show {
+  transform: translateX(0);
+}
+
+.notification-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.notification.success {
+  border-left: 4px solid #4CAF50;
+}
+
+.notification.error {
+  border-left: 4px solid #f44336;
+}
+
+.notification i {
+  font-size: 20px;
+}
+
+.notification.success i {
+  color: #4CAF50;
+}
+
+.notification.error i {
+  color: #f44336;
+}
+
+/* Loading spinner animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.fa-spinner {
+  animation: spin 1s linear infinite;
+}
+
+.contact .container form button span {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contact .container form button span i {
+    font-size: 1rem;
+    vertical-align: middle;
+}

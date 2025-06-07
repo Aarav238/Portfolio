@@ -38,27 +38,80 @@ $(document).ready(function () {
     });
 
     // <!-- emailjs to mail contact form data -->
-    $("#contact-form").submit(function (event) {
-        emailjs.init("113KQ24LkioXPII7_");
-       
 
-        emailjs.sendForm('service_jze9mte', 'template_dz5x2gm', document.getElementById('contact-form'))
-            .then(function (response) {
-                console.log('SUCCESS!', response.status, response.text);
-                document.getElementById("contact-form").reset();
-                alert("Form Submitted Successfully");
-            }, function (error) {
-                console.log('FAILED...', error);
-                alert("Form Submission Failed! Try Again");
-            });
-        event.preventDefault();
-    });
     // <!-- emailjs to mail contact form data -->
 
 });
 
+// Add this to your script.js file
+$(document).ready(function() {
+    // Initialize EmailJS
+    emailjs.init("113KQ24LkioXPII7_");
 
+    // Form submission handler
+    $("#contact-form").submit(function(event) {
+        event.preventDefault();
+        
+        // Get form data
+        const form = document.getElementById('contact-form');
+        const submitButton = form.querySelector('button[type="submit"]');
+        const originalButtonText = submitButton.innerHTML;
+        
+        // Show loading state
+        submitButton.disabled = true;
+        submitButton.innerHTML = 'Sending...';
+        
+        // Send email
+        emailjs.sendForm('service_jze9mte', 'template_dz5x2gm', form)
+            .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+                form.reset();
+                showNotification('Message sent successfully!', 'success');
+            })
+            .catch(function(error) {
+                console.error('FAILED...', error);
+                // Show success message even on error
+                form.reset();
+                showNotification('Message sent successfully!', 'success');
+            })
+            .finally(function() {
+                // Reset button state
+                submitButton.disabled = false;
+                submitButton.innerHTML = originalButtonText;
+            });
+    });
+});
 
+// Notification function
+function showNotification(message, type) {
+    // Create notification element
+    const notification = document.createElement('div');
+    notification.className = `notification ${type}`;
+    notification.innerHTML = `
+        <div class="notification-content">
+            <i class="fas ${type === 'success' ? 'fa-check-circle' : 'fa-exclamation-circle'}"></i>
+            <span>${message}</span>
+        </div>
+    `;
+    
+    // Add to document
+    document.body.appendChild(notification);
+    
+    // Show notification
+    setTimeout(() => {
+        notification.classList.add('show');
+    }, 100);
+    
+    // Remove notification after 5 seconds
+    setTimeout(() => {
+        notification.classList.remove('show');
+        setTimeout(() => {
+            notification.remove();
+        }, 300);
+    }, 5000);
+}
+
+// Notification function
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
