@@ -688,55 +688,61 @@ header .navbar ul li a:hover {
   height: 100%;
   width: 100%;
   position: absolute;
-  top: 85%;
+  top: 100%;
   left: 0;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(10, 10, 30, 0.95);
   display: flex;
   flex-direction: column;
+  transition: top 0.35s ease;
 }
 .work .box-container .box .content .tag {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 4.5rem;
+  min-height: 4.5rem;
   width: 100%;
-  padding-left: 1rem;
+  padding: 0.8rem 1rem;
   background: #ffd900;
 }
 .work .box-container .box .content .tag h3 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  color: #000;
 }
 .work .box-container .box:hover .content {
-  top: 25%;
+  top: 0;
 }
 .work .desc {
-  margin: 2rem;
+  margin: 1.2rem 1.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  flex: 1;
 }
 .work .desc p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  color: #ddd;
+  line-height: 1.6;
 }
 .work .desc .btns {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin-top: 2rem;
+  gap: 1rem;
+  margin-top: 1.5rem;
 }
 .work .desc .btns .btn {
-  line-height: 0;
-  display: inline;
-  padding: 1.5rem 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.9rem 1.8rem;
   border-radius: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 600;
   color: #fff;
-  background: rgb(12, 12, 12);
-  margin-right: 2rem;
+  background: #2506ad;
+  transition: background 0.2s;
 }
 .work .desc .btns .btn:hover {
-  background: #310ae0f5;
+  background: #4a1ef5;
 }
 .work .viewall {
   display: flex;

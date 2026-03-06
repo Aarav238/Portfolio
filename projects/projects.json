@@ -13,7 +13,7 @@
     "desc": "Chat with any user available in the database. Built using ReactJs, ExpressJs , MongoDB, NodeJs , Socket.io and multiAvatarApi(for avatars)",
     "image": "chat",
     "links": {
-      "view": "https://buzz-chat-app.netlify.app/",
+      "view": "https://buzzchat-mu.vercel.app/",
       "code": "https://github.com/Aarav238/Buzz-Chat"
     }
   },
@@ -32,7 +32,7 @@
     "desc": "Automated system using Node.js and Google APIs to fetch unread emails and generate smart replies, handling 500+ emails daily with secure OAuth2 authentication.",
     "image": "mailbot",
     "links": {
-      "view": "https://mail-bot-demo.netlify.app/",
+      "view": "https://gmail-bot-orcin.vercel.app/",
       "code": "https://github.com/Aarav238/Mail-Bot"
     }
   }
