@@ -22,7 +22,7 @@
   {
     "name": "DocRAG: Document Analysis with RAG",
     "desc": "Full-stack RAG application for document analysis with semantic search, Q&A with citations, and AI-powered draft generation. Supports PDF & DOCX with async ingestion pipeline.",
-    "image": "docrag",
+    "image": "docRag",
     "tech": ["FastAPI", "React", "OpenAI", "MongoDB", "Pinecone"],
     "links": {
       "view": "https://doc-rag-opal.vercel.app/",
