@@ -3,6 +3,7 @@
     "name": "ChatDocs: AI-Powered Document Chat Application",
     "desc": "AI-powered document chat app with React, Next.js, tRPC backend, LangChain & OpenAI integration, and Stripe-powered subscriptions.",
     "image": "chatdocs",
+    "tech": ["Next.js", "LangChain", "OpenAI", "Stripe", "tRPC"],
     "links": {
       "view": "https://chatdocs-phi.vercel.app/",
       "code": "https://github.com/Aarav238/chatdocs"
@@ -10,49 +11,52 @@
   },
   {
     "name": "Buzz-Chat: Real-Time Web Chat Application",
-    "desc": "Chat with any user available in the database. Built using ReactJs, ExpressJs , MongoDB, NodeJs , Socket.io and multiAvatarApi(for avatars)",
+    "desc": "Chat with any user available in the database. Built using ReactJs, ExpressJs, MongoDB, NodeJs, Socket.io and multiAvatarApi for avatars.",
     "image": "chat",
+    "tech": ["React", "Node.js", "Socket.io", "MongoDB", "Express"],
     "links": {
       "view": "https://buzzchat-mu.vercel.app/",
       "code": "https://github.com/Aarav238/Buzz-Chat"
     }
   },
   {
+    "name": "DocRAG: Document Analysis with RAG",
+    "desc": "Full-stack RAG application for document analysis with semantic search, Q&A with citations, and AI-powered draft generation. Supports PDF & DOCX with async ingestion pipeline.",
+    "image": "docrag",
+    "tech": ["FastAPI", "React", "OpenAI", "MongoDB", "Pinecone"],
+    "links": {
+      "view": "https://doc-rag-opal.vercel.app/",
+      "code": "https://github.com/Aarav238/DocRag"
+    }
+  },
+  {
+    "name": "AutoReply: Automated Email Reply System",
+    "desc": "Automated system using Node.js and Google APIs to fetch unread emails and generate smart replies, handling 500+ emails daily with secure OAuth2 authentication.",
+    "image": "mailbot",
+    "tech": ["Node.js", "Google APIs", "OAuth2", "Gmail API"],
+    "links": {
+      "view": "https://gmail-bot-orcin.vercel.app/",
+      "code": "https://github.com/Aarav238/Mail-Bot"
+    }
+  },
+  {
     "name": "SocioPedia - A Social Media App",
-    "desc": "This is a full stack web application in which user can make friends and upload pictures. This app is built using ReactJs, MongoDB, NodeJs, ExprssJs and MaterialUI",
+    "desc": "Full stack social media app where users can make friends and upload pictures. Built using ReactJs, MongoDB, NodeJs, ExpressJs and MaterialUI.",
     "image": "sociopedia",
-    "category": "mern",
+    "tech": ["React", "Node.js", "MongoDB", "Express", "Material UI"],
     "links": {
       "view": "https://social-pedia.netlify.app/",
       "code": "https://github.com/Aarav238/Social-Media-App"
     }
   },
   {
-    "name": "Mail-Bot: The Automated Email Reply System",
-    "desc": "Automated system using Node.js and Google APIs to fetch unread emails and generate smart replies, handling 500+ emails daily with secure OAuth2 authentication.",
-    "image": "mailbot",
-    "links": {
-      "view": "https://gmail-bot-orcin.vercel.app/",
-      "code": "https://github.com/Aarav238/Mail-Bot"
-    }
-  }
-  ,
-  {
     "name": "Keeper - Make notes",
-    "desc": "Build a note making app using ReactJS and used bootstrap for styling the website. In this, User can make note and add notes to the main page.",
+    "desc": "Note-making app built with ReactJS and Bootstrap. Users can create and manage notes on the main page.",
     "image": "notes",
+    "tech": ["React", "Bootstrap", "JavaScript"],
     "links": {
       "view": "https://keeper-app-orpin.vercel.app/",
       "code": "https://github.com/Aarav238/Keeper-App"
     }
-  },
-  {
-    "name": "ClimeSky - The Weather App",
-    "desc": "Made a live Weather Website. Used Open Weather API to weather data. Build using HTML, CSS , JavaScript. ",
-    "image": "weather",
-    "links": {
-      "view": "https://aarav238.github.io/ClimeSky/",
-      "code": "https://github.com/Aarav238/ClimeSky"
-    }
-  } 
+  }
 ]

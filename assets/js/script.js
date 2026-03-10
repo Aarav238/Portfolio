@@ -115,7 +115,7 @@ function showNotification(message, type) {
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-    strings: ["Web Development","Open Source", "DevOps","Generative AI"],
+    strings: ["Full-Stack Development","Open Source", "DevOps","Generative AI","Agentic AI","System Design"],
     loop: true,
     typeSpeed: 60,
     backSpeed: 30,
@@ -152,54 +152,33 @@ function showProjects(projects) {
     let projectsContainer = document.querySelector("#work .box-container");
     let projectHTML = "";
     projects.slice(0,6).forEach(project => {
+        const techHTML = project.tech
+            ? project.tech.slice(0, 4).map(t => `<span class="tech-tag">${t}</span>`).join('')
+            : '';
         projectHTML += `
-        <div class="box tilt">
-      <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="project" />
-      <div class="content">
-        <div class="tag">
-        <h3>${project.name}</h3>
-        </div>
-        <div class="desc">
-          <p>${project.desc}</p>
-          <div class="btns">
-            <a href="${project.links.view}" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-            <a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+        <div class="box">
+          <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="${project.name}" />
+          <div class="content">
+            <div class="tag">
+              <h3>${project.name}</h3>
+              <a href="${project.links.view}" target="_blank" style="color:var(--primary);font-size:1.4rem;" aria-label="Open project">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+            <div class="desc">
+              <p>${project.desc}</p>
+              <div class="tech-tags">${techHTML}</div>
+              <div class="btns">
+                <a href="${project.links.view}" class="btn" target="_blank"><i class="fas fa-eye"></i> Live Demo</a>
+                <a href="${project.links.code}" class="btn" target="_blank">Source <i class="fas fa-code"></i></a>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>`
+        </div>`;
     });
-    projectHTML += `
-    <div class="box-tilt">
-    <div class="box tilt">
-      <img draggable="false" src="/assets/images/projects/loading.gif" alt="project" />
-        </div>
-        </div>
-      </div>
-    </div>
-`;
 
-    console.log(projectHTML);
- 
     projectsContainer.innerHTML = projectHTML;
 
-
-    // <!-- tilt js effect starts -->
-    VanillaTilt.init(document.querySelectorAll(".tilt"), {
-        max: 15,
-    });
-    // <!-- tilt js effect ends -->
-
-    /* ===== SCROLL REVEAL ANIMATION ===== */
-    const srtop = ScrollReveal({
-        origin: 'top',
-        distance: '80px',
-        duration: 1000,
-        reset: true
-    });
-
-    /* SCROLL PROJECTS */
-    srtop.reveal('.work .box', { interval: 200 });
 
 }
 
@@ -211,11 +190,8 @@ fetchData("projects").then(data => {
     showProjects(data);
 });
 
-// <!-- tilt js effect starts -->
-VanillaTilt.init(document.querySelectorAll(".tilt"), {
-    max: 15,
-});
-// <!-- tilt js effect ends -->
+// tilt on about image
+VanillaTilt.init(document.querySelectorAll(".tilt"), { max: 8 });
 
 
 // pre loader start
@@ -253,40 +229,37 @@ const srtop = ScrollReveal({
 });
 
 /* SCROLL HOME */
-srtop.reveal('.home .content h3', { delay: 200 });
-srtop.reveal('.home .content p', { delay: 200 });
-srtop.reveal('.home .content .btn', { delay: 200 });
+srtop.reveal('.hero-content .availability-badge', { delay: 100 });
+srtop.reveal('.hero-title', { delay: 150 });
+srtop.reveal('.hero-sub', { delay: 200 });
+srtop.reveal('.hero-desc', { delay: 250 });
+srtop.reveal('.hero-btns', { delay: 300 });
+srtop.reveal('.hero-socials', { delay: 350 });
+srtop.reveal('.hero-card', { delay: 200, origin: 'right' });
 
-srtop.reveal('.home .image', { delay: 400 });
-srtop.reveal('.home .linkedin', { interval: 600 });
-srtop.reveal('.home .github', { interval: 800 });
-srtop.reveal('.home .twitter', { interval: 1000 });
-srtop.reveal('.home .telegram', { interval: 600 });
-srtop.reveal('.home .instagram', { interval: 600 });
-srtop.reveal('.home .dev', { interval: 600 });
+/* SCROLL METRICS */
+srtop.reveal('.metric-card', { interval: 150 });
 
 /* SCROLL ABOUT */
-srtop.reveal('.about .content h3', { delay: 100});
-srtop.reveal('.about .content .tag', { delay: 100  });
-srtop.reveal('.about .content p', { delay: 100  });
-srtop.reveal('.about .content .box-container', { delay: 100  });
-srtop.reveal('.about .content .resumebtn', { delay: 100  });
-
+srtop.reveal('.about-image-wrap', { delay: 100, origin: 'left' });
+srtop.reveal('.about-content .about-tag-row', { delay: 100 });
+srtop.reveal('.about-name', { delay: 150 });
+srtop.reveal('.about-desc', { delay: 200 });
+srtop.reveal('.about-stats', { delay: 250 });
 
 /* SCROLL SKILLS */
-srtop.reveal('.skills .container', { interval: 200 });
-srtop.reveal('.skills .container .bar', { delay: 300 });
-
-/* SCROLL EDUCATION */
-srtop.reveal('.education .box', { interval: 200 });
+srtop.reveal('.skills-container', { delay: 100 });
+srtop.reveal('.skills-grid .bar', { interval: 60 });
 
 /* SCROLL PROJECTS */
-srtop.reveal('.work .box', { interval: 200 });
+srtop.reveal('.work .box', { interval: 150 });
 
-/* SCROLL EXPERIENCE */
-srtop.reveal('.experience .timeline', { delay: 400 });
-srtop.reveal('.experience .timeline .container', { interval: 300 });
-
-/* SCROLL CONTACT */
-srtop.reveal('.contact .container', { delay:200 });
-srtop.reveal('.contact .container .form-group', { delay: 200 });
+/* SCROLL CONTACT — small distance so exit animation is subtle, not jarring */
+const srContact = ScrollReveal({
+    distance: '24px',
+    duration: 700,
+    easing: 'ease',
+    reset: true
+});
+srContact.reveal('.contact-left', { delay: 100, origin: 'left' });
+srContact.reveal('.contact-right', { delay: 200, origin: 'right' });

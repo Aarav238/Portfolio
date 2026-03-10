@@ -1,5 +1,17 @@
 [
     {
+        "name": "JavaScript",
+        "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"
+    },
+    {
+        "name": "TypeScript",
+        "icon": "https://img.icons8.com/color/48/typescript.png"
+    },
+    {
+        "name": "Python",
+        "icon": "https://img.icons8.com/color/48/000000/python--v1.png"
+    },
+    {
         "name": "Java",
         "icon": "https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png"
     },
@@ -8,29 +20,80 @@
         "icon": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png"
     },
     {
-        "name": "ExpressJS",
-        "icon": "https://img.icons8.com/fluency/48/000000/node-js.png"
+        "name": "Next.js",
+        "icon": "https://img.icons8.com/color/48/nextjs.png"
     },
     {
         "name": "NodeJS",
         "icon": "https://img.icons8.com/color/48/000000/nodejs.png"
     },
-    
+    {
+        "name": "ExpressJS",
+        "icon": "https://img.icons8.com/fluency/48/000000/node-js.png"
+    },
+    {
+        "name": "FastAPI",
+        "icon": "https://img.icons8.com/?size=48&id=r9QJ0VFFrn7T&format=png&color=000000"
+    },
+    {
+        "name": "LangChain",
+        "icon": "https://img.icons8.com/color/48/artificial-intelligence.png"
+    },
+    {
+        "name": "TailwindCSS",
+        "icon": "https://img.icons8.com/color/48/tailwindcss.png"
+    },
     {
         "name": "MongoDB",
         "icon": "https://img.icons8.com/color/48/null/mongodb.png"
     },
     {
-        "name": "Redux",
-        "icon": "https://img.icons8.com/color/48/000000/redux.png"
+        "name": "PostgreSQL",
+        "icon": "https://img.icons8.com/color/48/postgreesql.png"
     },
     {
-        "name": "Firebase",
-        "icon": "https://img.icons8.com/color/48/000000/firebase.png"
+        "name": "MySQL",
+        "icon": "https://img.icons8.com/color/48/mysql.png"
+    },
+    {
+        "name": "Redis",
+        "icon": "https://img.icons8.com/color/48/redis.png"
+    },
+    {
+        "name": "Prisma",
+        "icon": "https://img.icons8.com/color/48/prisma-orm.png"
     },
     {
         "name": "Docker",
         "icon": "https://img.icons8.com/fluency/48/null/docker.png"
+    },
+    {
+        "name": "Kubernetes",
+        "icon": "https://img.icons8.com/color/48/kubernetes.png"
+    },
+    {
+        "name": "AWS",
+        "icon": "https://img.icons8.com/color/48/amazon-web-services.png"
+    },
+    {
+        "name": "Azure",
+        "icon": "https://img.icons8.com/?size=48&id=VLKafOkk3sBX&format=png&color=000000"
+    },
+    {
+        "name": "Git",
+        "icon": "https://img.icons8.com/color/48/null/git.png"
+    },
+    {
+        "name": "Generative AI",
+        "icon": "https://img.icons8.com/color/48/bot.png"
+    },
+    {
+        "name": "HTML5",
+        "icon": "https://img.icons8.com/color/48/000000/html-5--v1.png"
+    },
+    {
+        "name": "CSS3",
+        "icon": "https://img.icons8.com/color/48/000000/css3.png"
     },
     {
         "name": "MaterialUI",
@@ -41,59 +104,19 @@
         "icon": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/null/external-postman-is-the-only-complete-api-development-environment-logo-color-tal-revivo.png"
     },
     {
-        "name": "TailwindCSS",
-        "icon": "https://img.icons8.com/color/48/tailwindcss.png"
+        "name": "Kafka",
+        "icon": "https://cdn.simpleicons.org/apachekafka/0db9f2"
     },
     {
-        "name": "TypeScript",
-        "icon": "https://img.icons8.com/color/48/typescript.png" 
+        "name": "Redux",
+        "icon": "https://img.icons8.com/color/48/000000/redux.png"
+    },
+    {
+        "name": "Firebase",
+        "icon": "https://img.icons8.com/color/48/000000/firebase.png"
     },
     {
         "name": "Sass",
         "icon": "https://img.icons8.com/color/48/000000/sass.png"
-    },
-    {
-        "name": "FastAPI",
-        "icon": "https://img.icons8.com/?size=48&id=r9QJ0VFFrn7T&format=png&color=000000"
-      },
-    {
-        "name": "HTML5",
-        "icon": "https://img.icons8.com/color/48/000000/html-5--v1.png"
-    },
-    {
-        "name": "CSS3",
-        "icon": "https://img.icons8.com/color/48/000000/css3.png"
-    },
-    {
-        "name": "JavaScript",
-        "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"
-    },
-    {
-        "name": "Generative AI",
-        "icon": "https://img.icons8.com/color/48/artificial-intelligence.png"
-      },
-      {
-        "name": "Kubernetes",
-        "icon": "https://img.icons8.com/color/48/kubernetes.png"
-      },
-      {
-        "name": "Azure",
-        "icon": "https://img.icons8.com/?size=48&id=VLKafOkk3sBX&format=png&color=000000"
-      },
-    {
-        "name": "Git",
-        "icon": "https://img.icons8.com/color/48/null/git.png"
-    },
-    {
-        "name": "MySQL",
-        "icon": "https://img.icons8.com/color/48/mysql.png"
-      },
-    {
-        "name": "Python",
-        "icon": "https://img.icons8.com/color/48/000000/python--v1.png"
-    },
-    {
-        "name": "Prisma",
-        "icon": "https://img.icons8.com/color/48/prisma-orm.png"
     }
 ]
