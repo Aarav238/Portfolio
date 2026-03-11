@@ -46,7 +46,7 @@ $(document).ready(function () {
 // Add this to your script.js file
 $(document).ready(function() {
     // Initialize EmailJS
-    emailjs.init("113KQ24LkioXPII7_");
+    emailjs.init("zmrxviDfhmp533F0y");
 
     // Form submission handler
     $("#contact-form").submit(function(event) {
@@ -70,9 +70,7 @@ $(document).ready(function() {
             })
             .catch(function(error) {
                 console.error('FAILED...', error);
-                // Show success message even on error
-                form.reset();
-                showNotification('Message sent successfully!', 'success');
+                showNotification('Failed to send message. Please try again.', 'error');
             })
             .finally(function() {
                 // Reset button state
