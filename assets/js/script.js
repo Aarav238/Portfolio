@@ -221,45 +221,46 @@ VanillaTilt.init(document.querySelectorAll(".tilt"), { max: 8 });
 
 
 /* ===== SCROLL REVEAL ANIMATION ===== */
-const srtop = ScrollReveal({
+
+/* Hero & Metrics — repeat animation (above the fold, "welcome back" effect) */
+const srRepeat = ScrollReveal({
     origin: 'top',
-    distance: '80px',
-    duration: 1000,
+    distance: '60px',
+    duration: 800,
     reset: true
 });
 
-/* SCROLL HOME */
-srtop.reveal('.hero-content .availability-badge', { delay: 100 });
-srtop.reveal('.hero-title', { delay: 150 });
-srtop.reveal('.hero-sub', { delay: 200 });
-srtop.reveal('.hero-desc', { delay: 250 });
-srtop.reveal('.hero-btns', { delay: 300 });
-srtop.reveal('.hero-socials', { delay: 350 });
-srtop.reveal('.hero-card', { delay: 200, origin: 'right' });
+srRepeat.reveal('.hero-content .availability-badge', { delay: 100 });
+srRepeat.reveal('.hero-title', { delay: 150 });
+srRepeat.reveal('.hero-sub', { delay: 200 });
+srRepeat.reveal('.hero-desc', { delay: 250 });
+srRepeat.reveal('.hero-btns', { delay: 300 });
+srRepeat.reveal('.hero-socials', { delay: 350 });
+srRepeat.reveal('.hero-card', { delay: 200, origin: 'right' });
+srRepeat.reveal('.metric-card', { interval: 150 });
 
-/* SCROLL METRICS */
-srtop.reveal('.metric-card', { interval: 150 });
-
-/* SCROLL ABOUT */
-srtop.reveal('.about-image-wrap', { delay: 100, origin: 'left' });
-srtop.reveal('.about-content .about-tag-row', { delay: 100 });
-srtop.reveal('.about-name', { delay: 150 });
-srtop.reveal('.about-desc', { delay: 200 });
-srtop.reveal('.about-stats', { delay: 250 });
-
-/* SCROLL SKILLS */
-srtop.reveal('.skills-container', { delay: 100 });
-srtop.reveal('.skills-grid .bar', { interval: 60 });
-
-/* SCROLL PROJECTS */
-srtop.reveal('.work .box', { interval: 150 });
-
-/* SCROLL CONTACT — small distance so exit animation is subtle, not jarring */
-const srContact = ScrollReveal({
-    distance: '24px',
+/* Everything below the fold — animate in once, stay visible */
+const srOnce = ScrollReveal({
+    origin: 'bottom',
+    distance: '40px',
     duration: 700,
-    easing: 'ease',
-    reset: true
+    reset: false
 });
-srContact.reveal('.contact-left', { delay: 100, origin: 'left' });
-srContact.reveal('.contact-right', { delay: 200, origin: 'right' });
+
+/* ABOUT */
+srOnce.reveal('.about-image-wrap', { delay: 100, origin: 'left' });
+srOnce.reveal('.about-content .about-tag-row', { delay: 100 });
+srOnce.reveal('.about-name', { delay: 150 });
+srOnce.reveal('.about-desc', { delay: 200 });
+srOnce.reveal('.about-stats', { delay: 250 });
+
+/* SKILLS */
+srOnce.reveal('.skills-container', { delay: 100 });
+srOnce.reveal('.skills-grid .bar', { interval: 50 });
+
+/* PROJECTS */
+srOnce.reveal('.work .box', { interval: 120 });
+
+/* CONTACT */
+srOnce.reveal('.contact-left', { delay: 100, origin: 'left' });
+srOnce.reveal('.contact-right', { delay: 200, origin: 'right' });
