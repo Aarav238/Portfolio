@@ -258,6 +258,7 @@ srOnce.reveal('.skills-grid .bar', { interval: 50 });
 
 /* PROJECTS */
 srOnce.reveal('.work .box', { interval: 120 });
+srOnce.reveal('.more-projects', { delay: 200 });
 
 /* CONTACT */
 srOnce.reveal('.contact-left', { delay: 100, origin: 'left' });

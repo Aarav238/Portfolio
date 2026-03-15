@@ -16,6 +16,52 @@
 </head>
 <body>
 
+<!-- ============ PRELOADER / BOOT SEQUENCE ============ -->
+<div id="preloader">
+    <div class="terminal">
+        <div class="terminal-header">
+            <div class="terminal-dots">
+                <span></span><span></span><span></span>
+            </div>
+            <span class="terminal-title">aarav.dev — initializing</span>
+        </div>
+        <div class="terminal-body" id="terminalBody">
+            <div class="term-line" data-delay="0">
+                <span class="term-prompt">$</span>
+                <span class="term-cmd">loading portfolio modules...</span>
+            </div>
+            <div class="term-line" data-delay="400">
+                <span class="term-prompt">$</span>
+                <span class="term-cmd">fetching skills.json</span>
+                <span class="term-status ok">done</span>
+            </div>
+            <div class="term-line" data-delay="800">
+                <span class="term-prompt">$</span>
+                <span class="term-cmd">fetching projects.json</span>
+                <span class="term-status ok">done</span>
+            </div>
+            <div class="term-line" data-delay="1200">
+                <span class="term-prompt">$</span>
+                <span class="term-cmd">compiling experience —— 3+ years</span>
+                <span class="term-status ok">ready</span>
+            </div>
+            <div class="term-line" data-delay="1600">
+                <span class="term-prompt">$</span>
+                <span class="term-cmd">initializing AI systems —— RAG · Agents · LLMs</span>
+                <span class="term-status ok">online</span>
+            </div>
+            <div class="term-line" data-delay="2000">
+                <span class="term-prompt">$</span>
+                <span class="term-cmd">deploying aarav.dev</span>
+                <span class="term-status launch">launching...</span>
+            </div>
+        </div>
+        <div class="terminal-progress" id="terminalProgress">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+    </div>
+</div>
+
 <!-- ============ NAVBAR ============ -->
 <header id="header">
     <a href="/" class="logo">
@@ -61,7 +107,7 @@
             </p>
 
             <p class="hero-desc">
-                Full-Stack Engineer with 3+ years shipping production-grade web apps, AI systems, and developer tools. I go from idea to deployed product, fast.
+                I turn ideas into production-ready products. From scalable backends to AI-powered systems, I build things that actually work, and I ship them fast.
             </p>
 
             <div class="hero-btns">
@@ -236,6 +282,22 @@
     </div>
 
     <div class="box-container"></div>
+
+    <div class="more-projects">
+        <div class="more-projects-inner">
+            <div class="more-projects-text">
+                <i class="fab fa-github"></i>
+                <div>
+                    <p class="more-projects-title">Want to see more?</p>
+                    <p class="more-projects-sub">Explore all my projects on my GitHub.</p>
+                </div>
+            </div>
+            <a href="https://github.com/Aarav238" target="_blank" class="btn btn-primary">
+                <span>View GitHub</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
 </section>
 
 <!-- ============ CONTACT ============ -->
@@ -352,6 +414,34 @@
             cell.style.opacity = lvl === 0 ? '0.06' : (lvl / 100);
             grid.appendChild(cell);
         }
+    })();
+
+    // Terminal boot sequence
+    (function() {
+        const lines = document.querySelectorAll('.term-line');
+        const preloader = document.getElementById('preloader');
+
+        // Reveal lines one by one
+        lines.forEach(function(line, i) {
+            const delay = parseInt(line.getAttribute('data-delay')) || i * 400;
+            setTimeout(function() {
+                line.classList.add('visible');
+            }, delay);
+        });
+
+        // After all lines + progress bar finish, fade out
+        const totalTime = 2800;
+        setTimeout(function() {
+            preloader.classList.add('fade-out');
+            document.body.style.overflow = '';
+            // Remove from DOM after transition
+            setTimeout(function() {
+                preloader.remove();
+            }, 600);
+        }, totalTime);
+
+        // Prevent scroll during preloader
+        document.body.style.overflow = 'hidden';
     })();
 </script>
 
